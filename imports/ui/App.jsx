@@ -13,9 +13,9 @@ export const App = () => {
       .then((res) => console.log("[cli:callUnblockTest] => finish", { res }))
       .catch((err) => console.log("[cli:callUnblockTest] => finish", { err }));
     const p2 = callUnblockTest2(useUnblock)
-      .then((res) => console.log("[cli:callUnblockTestAbc] => finish", { res }))
+      .then((res) => console.log("[cli:callUnblockTest2] => finish", { res }))
       .catch((err) =>
-        console.log("[cli:callUnblockTestAbc] => finish", { err })
+        console.log("[cli:callUnblockTest2] => finish", { err })
       );
     Promise.all([p1, p2]).finally(() => console.log("### Finish"));
   };
